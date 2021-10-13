@@ -68,12 +68,14 @@ body{
 .number, .operator{
 	cursor: pointer;
 }
-#clear, #backspace,#modulus  {
+#clear, #backspace {
 background-color:rosybrown;
 
 }
 
-
+button:nth-child(3){
+	background-color:rosybrown;
+}
 .operator:active, .number:active{
 	font-size: 13px;
 }
