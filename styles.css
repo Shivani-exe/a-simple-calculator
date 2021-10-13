@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --primary-color:#33cccc;
+    --secondary-color:grey;
+}
+
+body{
+    background-color: black;
+    font-family: var(--font-family);
+}
+#container{
+    width:1000px;
+    height:550px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/calci.jpg);
+    margin:auto;
+    margin-top: 20px;
+
+}
+#calculator{
+    width:320px;
+    height:520px;
+    background-color:lightgrey;
+    margin:auto;
+    top: 20px;
+    position: relative;
+    box-shadow: 1px 1px 3px 3px var(--secondary-color);
+    border-radius: 7px;
+
+}
+#result{
+   height:120px;
+}
+#history{
+        text-align: right;
+        font-size: 15px;
+        font-weight: 100;
+        margin:0 20px;
+        padding-top: 20px;
+        color:black ;
+       
+
+        
+}
+#output{
+    text-align: right;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px 15px;
+    height: 60px;
+}
+#keyboard{
+    height: 400px;
+}
+.number ,.empty, .operator{
+    width: 50px;
+	height: 50px;
+	margin: 15px;
+	float:left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number, .empty{
+	background-color:lightgrey;
+}
+.number, .operator{
+	cursor: pointer;
+}
+#clear, #backspace,#modulus  {
+background-color:rosybrown;
+
+}
+
+
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
